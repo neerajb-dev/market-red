@@ -38,9 +38,9 @@
 }
 
 .bubble_2::before {
-    content: "Create Account";
+    content: "Company Registration";
     position: absolute;
-    left: -180px;
+    left: -210px;
     width: 250px;
 }
 
@@ -49,7 +49,7 @@
 }
 
 .bubble_3::before {
-    content: "Create Account";
+    content: "Company Profile";
     position: absolute;
     left: -180px;
     width: 250px;
