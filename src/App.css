@@ -1,3 +1,93 @@
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bubble {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgb(7, 145, 78);
+    border-radius: 50px;
+    margin-bottom: 50px;
+    position: absolute;
+    right: 0;
+    background: #fff;
+    font-size: 1.25rem;
+    color: #fff;
+}
+
+.bubble span {
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bubble_1::before {
+    content: "Create Account";
+    position: absolute;
+    left: -180px;
+    width: 250px;
+}
+
+.bubble_2 {
+    top: 100px;
+}
+
+.bubble_2::before {
+    content: "Create Account";
+    position: absolute;
+    left: -180px;
+    width: 250px;
+}
+
+.bubble_3 {
+    top: 200px;
+}
+
+.bubble_3::before {
+    content: "Create Account";
+    position: absolute;
+    left: -180px;
+    width: 250px;
+}
+
+.side-bubbles-container {
+    width: 270px;
+    height: 50%;
+    position: relative;
+    top: 50%;
+    left: -245px;
+    transform: translateY(-50%);
+}
+
+.signupForm-container {
+    width: 800px;
+    height: 500px;
+    background-color: #fff;
+    position: relative;
+    top: 40%;
+    left: 80%;
+    transform: translateY(-50%);
+}
+
+.signup-agency-page {
+    width: 100%;
+    height: 100vh;
+    font-size: 1.5rem;
+}
+
+.sidebox {
+    width: 300px;
+    height: 100%;
+    background-color: red;
+}
+
+/* signup agency page end */
+
 .register-page {
     width: 100vw;
     height: 100vh;
@@ -12,4 +102,28 @@
 
 .register-card {
     background-color: rgb(190, 190, 190) !important;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .signupForm-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+    }
+
+    .sidebox {
+        width: 50%;
+    }
+
+    .side-bubbles-container {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1050px) {
+    .signupForm-container {
+        width: 500px;
+    }
 }
